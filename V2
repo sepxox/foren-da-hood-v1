@@ -4,14 +4,21 @@
 
 	
                                                    
-      _/_/                                         
-   _/        _/_/    _/  _/_/    _/_/    _/_/_/    
-_/_/_/_/  _/    _/  _/_/      _/_/_/_/  _/    _/   
- _/      _/    _/  _/        _/        _/    _/    
-_/        _/_/    _/          _/_/_/  _/    _/     
-                                                   
+                  _               °               ,.-:^*:*:^:~,'           .:'/*/'`:,·:~·–:.,                           ,.-:~:'*:~-.°           .:':'`:·          ,:´'`;' ‘                         
+     ,·~:-·´::/:`:;_.-~^*/'^;            ,:´:::::::::::::::/_‚        /::/:/:::/:::;::::::/`':.,'                 .·´:::::::::::::::;         /:::::::/`·,      /::::/;‘                          
+    /::::::_:/::::::::::::/:::'i           /::;:-·^*'*'^~-;:/::/`;   ' /·*'`·´¯'`^·-~·:–-'::;:::'`;              /::;:-·~^*^~-:;:/ °       /:·*'`·:/:::::' , /·´'`;/::';'                         
+  /·~-·´     `:;_,:·-~^*'`^:;          /:´    ,. –.,_,.'´::/:::';' ' '\                       '`;::'i‘        ,.-/:´     .,       ;/         ,'         `:;::::'`i    ';:::';                         
+ 'i                            i/       ,/    ,:´';         ;'´¯`,:::'i'    '`;        ,– .,        'i:'/        /::';      ,'::`:~.-:´;         ;            '`;:::'i    'i::::i                         
+  `·,                     ,.·´      ' ,'     ';:::`,       ,:     ';::i‘      i       i':/:::';       ;/'        /;:- ´        `'·–·;:'/' _       i               `;:';    'i:::i'                         
+     `;         ,-·~:^*'´/;         ;      ';:::/:`::^*:´;      i::';'‘     i       i/:·'´       ,:''        /     ;:'`:.., __,.·'::/:::';      i      ,          \|     '|:::i°                        
+      ';        ;-· ~·-;/:/'         i       `;/::::::::,·´      ';:/'‘      '; '    ,:,     ~;'´:::'`:,    ;'      ';:::::::::::::::/;;::/      |     ,'`,                i:;'' ‚                        
+      ';       ,.,      ,'/           ';         '` *^*'´         .'/‘        'i      i:/\       `;::::/:'`;' ¦         '`·-·:;::·-·'´   ';:/‘      'i    'i:::i',             ';/'                           
+       ;      ';:/`'*'*´               '\                         /           ;     ;/   \       '`:/::::/' '\                         /'        'i     ;::/ \           ;/'                             
+       ';     ;/'                        `·,                ,-·´ '            ';   ,'       \         '`;/'    `·,                  ,·'  '         \    'i/    '`·,      ,''                               
+        \    /                             '`*~·––·~^'´  '                 `'*´          '`~·-·^'´           '`~·- . , . -·'´                '`~´         '`·–·'´'                                
+          `'´             '                      '                                                                                                                 ‘                                  
                                                 
-
+ discord.gg/foren
 ]]
 
 if isfile("menu_plex.font") then
@@ -68,7 +75,7 @@ local Library = {
 		main = "test";
 		configs = "test/Configs";
 	};
-	Accent = Color3.fromRGB(255,41,69);
+	Accent = Color3.fromRGB(247,52,98);
 	Pages = {};
 	Sections = {};
 	Flags = {};
@@ -842,7 +849,7 @@ do
 			Icon.Position = UDim2.new(1, - (count * 20) - (count * 6),0.5,0)
 			Icon.Size = UDim2.new(0,20,0,10)
 			Icon.BackgroundColor3 = Color3.fromRGB(45,45,45)
-			Icon.BorderColor3 = Color3.fromRGB(10,10,10)
+			Icon.BorderColor3 = Color3.fromRGB(31, 31, 31)
 			Icon.AnchorPoint = NewVector2(1,0.5)
 			Icon.AutoButtonColor = false
 			Icon.Text = ""
@@ -857,7 +864,7 @@ do
 			ColorWindow.Position = UDim2.new(1,-2,1,2)
 			ColorWindow.Size = UDim2.new(0,206,0,170)
 			ColorWindow.BackgroundColor3 = Color3.fromRGB(45,45,45)
-			ColorWindow.BorderColor3 = Color3.fromRGB(10,10,10)
+			ColorWindow.BorderColor3 = Color3.fromRGB(31, 31, 31)
 			ColorWindow.AnchorPoint = NewVector2(1,0)
 			ColorWindow.ZIndex = 100
 			ColorWindow.Visible = false
@@ -1029,7 +1036,7 @@ do
 			end)
 			--
 			Library:Connection(Icon.MouseLeave, function()
-				Icon.BorderColor3 = Color3.fromRGB(10,10,10)
+				Icon.BorderColor3 = Color3.fromRGB(31, 31, 31)
 			end)
 
 			-- // Connections
@@ -4856,7 +4863,7 @@ do
 			utility.drawings["Tracer"] = utility:drawObject("Line", {})
 			utility.drawings["Aim Assist FOV"] = utility:drawObject("Circle", {Visible = false, Radius = 8, Color = Color3.fromRGB(0,0,0), Filled = false})
 			utility.drawings["Sub"] = utility:drawObject("Text", {Outline = true, Text = "foren", Color = Color3.new(1, 1, 1)})
-			utility.drawings["Domain"] = utility:drawObject("Text", {Outline = true, Text = ".wtf", Color = Color3.fromRGB(132, 108, 188)})
+			utility.drawings["Domain"] = utility:drawObject("Text", {Outline = true, Text = ".wtf", Color = Color3.fromRGB(247, 52, 98)})
 			--
 			for i,v in pairs(bodyClone:GetDescendants()) do 
 				if v:IsA("BasePart") and v.Name ~= "HumanoidRootPart" then 
@@ -4903,7 +4910,7 @@ do
 						"YoUr A BoOt",
 						"keep Trying You Jobby",
 					},
-					["REP SPAM"] = {
+					["Foren"] = {
 						"GET SHREDDED BY . GG/FOREN",
 						"FOREN IS BETTER",
 						"Slammed by FOREN",
@@ -4911,7 +4918,8 @@ do
 						"SEEMS LIKE YOU NEED FOREN ----> . GG/FOREN",
 						". GG/FOREN <-- THIS WILL LET YOU COPE WITH YOUR ISSUES",
 						"WHAT YOU CANT BEAT FOREN?",
-						"PRO TIP: BUY Foren",
+						"PRO TIP: BUY FOREN",
+						"NO WAY YOUR THIS BAD JOIN . gg /FOREN TO GET BETTER",
 					},
 				}
 				utx = {
@@ -5339,8 +5347,8 @@ local crosshair_lineOffsets = utility:generateAngles(4);
 local Window = Library:Window({Size = UDim2.new(0,580,0,600)}) do 
 	-- // Rage
 	local aiming = Window:Page({Name = "Rage", Weapons = true}) do
-		local Settings = aiming:Weapon({Icon = "rbxassetid://6031280882"})
-		local Visuals = aiming:Weapon({Icon = "rbxassetid://7300480952"})
+		local Settings = aiming:Weapon({Icon = "rbxassetid://17321469922"})
+		local Visuals = aiming:Weapon({Icon = "rbxassetid://17321831967"})
 		-- 
 		local mainTarget = Settings:Section({Name = "Main", Size = 330}) do 
 			mainTarget:Toggle({Name = "Enabled", Flag = "Silent Enabled", Risk = true})
@@ -5416,7 +5424,7 @@ local Window = Library:Window({Size = UDim2.new(0,580,0,600)}) do
 		local aimAssist = legit:Section({Name = "Aim Assist", Size = 330}) do 
 			aimAssist:Toggle({Name = "Enabled", Flag = "Aim Assist"}):Keybind({Name = "Aim Assist", Flag = "Aim Assist Bind", Mode = "Toggle", Callback = function()
 				aimAssistTarget = utility.target or utility:getClosestPlayerToCursor(math.huge)
-			end}) -- portal is a fuckin g
+			end}) 
 			local Vertical = aimAssist:Slider({Name = "Horizontal Smoothness", Flag = "Horizontal Smoothness", Min = 0, Max = 100, Default = 20, Decimals = 1})
 			Vertical:SetVisible(false)
 			local Horizontal = aimAssist:Slider({Name = "Vertical Smoothness", Flag = 'Vertical Smoothness', Min = 0, Max = 100, Default = 20, Decimals = 1})
@@ -5466,8 +5474,8 @@ local Window = Library:Window({Size = UDim2.new(0,580,0,600)}) do
 	end 	
 	-- 	// Esp 
 	local esp = Window:Page({Name = "Visuals", Weapons = true}) do 
-		local ESP = esp:Weapon({Icon = "rbxassetid://6034281935"})
-		local World = esp:Weapon({Icon = "rbxassetid://16997762295"})
+		local ESP = esp:Weapon({Icon = "rbxassetid://17321510330"})
+		local World = esp:Weapon({Icon = "rbxassetid://17321625064"})
 		-- 
 		local playerEsp = ESP:Section({Name = "Player Esp", Size = 330, Side = "Left"}) do 
 			playerEsp:Toggle({Name = "Enabled", Flag = "PlayerESP_Enabled", Callback = function(Bool)
@@ -5493,7 +5501,7 @@ local Window = Library:Window({Size = UDim2.new(0,580,0,600)}) do
 			playerEsp:Dropdown({Name = "Flags", Flag = "PlayerESP_Flag_Options", Options = {"Distance", "Knocked"}, Max = 9e9})
 			playerEsp:Toggle({Name = "Gun Icons", Flag = "PlayerESP_GunIcons"})
 			local highlight = playerEsp:Toggle({Name = "Chams", Flag = "PlayerESP_Highlights"})
-			highlight:Colorpicker({Default = Color3.fromHex("#7D0DC3"), Transparency = 0.7, Flag = "PlayerESP_HighlightFillSettings"});
+			highlight:Colorpicker({Default = Color3.fromHex("#FC3858"), Transparency = 0.7, Flag = "PlayerESP_HighlightFillSettings"});
 			highlight:Colorpicker({Default = Color3.new(0,0,0), Flag = "PlayerESP_HighlightOutlineSettings"});
 		end 
 		-- 
@@ -5523,7 +5531,7 @@ local Window = Library:Window({Size = UDim2.new(0,580,0,600)}) do
 			selfEsp:Dropdown({Name = "Flags", Flag = "Self_PlayerESP_Flag_Options", Options = {"Distance", "Knocked"}, Max = 9e9})
 			selfEsp:Toggle({Name = "Gun Icons", Flag = "Self_PlayerESP_GunIcons"})
 			local highlight = selfEsp:Toggle({Name = "Chams", Flag = "Self_PlayerESP_Highlights"})
-			highlight:Colorpicker({Default = Color3.fromHex("#7D0DC3"), Transparency = 0.7, Flag = "Self_PlayerESP_HighlightFillSettings"});
+			highlight:Colorpicker({Default = Color3.fromHex("#FC3858"), Transparency = 0.7, Flag = "Self_PlayerESP_HighlightFillSettings"});
 			highlight:Colorpicker({Default = Color3.new(0,0,0), Flag = "Self_PlayerESP_HighlightOutlineSettings"});
 		end 
 		-- 
@@ -5650,8 +5658,8 @@ local Window = Library:Window({Size = UDim2.new(0,580,0,600)}) do
 	end 
 	-- // Visuals 
 	local misc = Window:Page({Name = "Misc", Weapons = true}) do 
-		local Movement = misc:Weapon({Icon = "rbxassetid://6034509993"})
-		local Exploits = misc:Weapon({Icon = "rbxassetid://16997954488"})
+		local Movement = misc:Weapon({Icon = "rbxassetid://17321495028"})
+		local Exploits = misc:Weapon({Icon = "rbxassetid://17321777529"})
 		local movementSection = Movement:Section({Name = "General", Size = 330}) do 
 			movementSection:Toggle({Name = "Speed", Flag = "Speed Enabled"}):Keybind({Name = "Speed", Flag = "Speed Key", Mode = "Toggle", Callback = function()
 				if Chatting then return end 
@@ -5713,7 +5721,7 @@ local Window = Library:Window({Size = UDim2.new(0,580,0,600)}) do
 					C_Desync["OldPosition"] = nil 
 				end 
 			end}) 
-			local Vis = cframeDesync:Toggle({Name = "Visualize", Flag = "Desync Visualize"}); Vis:Colorpicker({Default = Color3.fromRGB(0,0,0), Flag = "Desync Visualize Outline", Alpha = 0}); Vis:Colorpicker({Default = Color3.fromHex("#7D0DC3"), Flag = "Desync Visualize Fill", Alpha = 0.7});
+			local Vis = cframeDesync:Toggle({Name = "Visualize", Flag = "Desync Visualize"}); Vis:Colorpicker({Default = Color3.fromRGB(0,0,0), Flag = "Desync Visualize Outline", Alpha = 0}); Vis:Colorpicker({Default = Color3.fromHex("#FC3858"), Flag = "Desync Visualize Fill", Alpha = 0.7});
 			cframeDesync:Toggle({Name = "Attach onto target", Flag = "Attach Target"});
 			cframeDesync:Dropdown({Name = "Type", Flag = "Desync Type", Options = {"Custom", "Random", "Target Strafe", "Roll"}, Default = "Target Strafe", Callback = function(Option)
 				if #customSliders ~= 0 then 
@@ -5751,7 +5759,7 @@ local Window = Library:Window({Size = UDim2.new(0,580,0,600)}) do
 						loop = RunService.Heartbeat.Connect(RunService.Heartbeat, framework.desyncInit);
 					end
 				else 
-					-- skibidi sigma rizz
+				
 					if loop then 
 						loop:Disconnect()
 						loop = nil 
@@ -6471,6 +6479,6 @@ Library:Notification("Loaded foren.lol in " .. Floor((tick() - loadingTime) * 10
 
 --[[
 
- V2
+ FOREN V8
 
 ]]
