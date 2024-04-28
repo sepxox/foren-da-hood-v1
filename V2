@@ -68,7 +68,7 @@ local Library = {
 		main = "test";
 		configs = "test/Configs";
 	};
-	Accent = Color3.fromRGB(132,108,188);
+	Accent = Color3.fromRGB(255,41,69);
 	Pages = {};
 	Sections = {};
 	Flags = {};
@@ -3750,7 +3750,7 @@ do
 				end 
 			end 
 			--
-			function utility:AngleToEdge(angle, inset) -- credits to whoever made this Im just porting over my old arrows 😭
+			function utility:AngleToEdge(angle, inset)
 				local pos
 				local ox = Cos(angle)
 				local oy = Sin(angle)
@@ -3776,12 +3776,11 @@ do
 				return pos
 			end
 			--
-			function utility:Map(N, OldMin, OldMax, Min, Max) -- I love my 1 line funcs I use once ♥😻
+			function utility:Map(N, OldMin, OldMax, Min, Max) 
 				return (N - OldMin) / (OldMax - OldMin) * (Max - Min) + Min
 			end
 			--
-			function utility:getRotate(Vec, Rads) -- I didnt make this math credits to whoever can code cool maths!
-				local vec = Vec.Unit
+			function utility:getRotate(Vec, Rads)
 				local sin = math.sin(Rads)
 				local cos = math.cos(Rads)
 				local x = (cos * vec.x) - (sin * vec.y)
@@ -3898,7 +3897,7 @@ do
 							Camera.CameraSubject = utility.target.Character.Humanoid
 						end 
 					else 
-						-- What the fuck why does this break? I dont know dont ask me >:(
+						
 						LocalPlayer.Character.Humanoid.AutoRotate = true;
 						Camera.CameraSubject = LocalPlayer.Character.Humanoid;
 						utility.folders["Part Chams"]:ClearAllChildren();
@@ -3956,7 +3955,7 @@ do
 				end 
 			end 
 			-- 
-			function framework:desyncInit() -- thanks wendigo for this or whoever made it 
+			function framework:desyncInit()
 				local Root = LocalPlayer.Character.HumanoidRootPart
 				local rootVel = Root.Velocity;
 				local rootAng = Random(-180, 180)
@@ -4857,7 +4856,7 @@ do
 			utility.drawings["Tracer"] = utility:drawObject("Line", {})
 			utility.drawings["Aim Assist FOV"] = utility:drawObject("Circle", {Visible = false, Radius = 8, Color = Color3.fromRGB(0,0,0), Filled = false})
 			utility.drawings["Sub"] = utility:drawObject("Text", {Outline = true, Text = "foren", Color = Color3.new(1, 1, 1)})
-			utility.drawings["Domain"] = utility:drawObject("Text", {Outline = true, Text = ".lol", Color = Color3.fromRGB(132, 108, 188)})
+			utility.drawings["Domain"] = utility:drawObject("Text", {Outline = true, Text = ".wtf", Color = Color3.fromRGB(132, 108, 188)})
 			--
 			for i,v in pairs(bodyClone:GetDescendants()) do 
 				if v:IsA("BasePart") and v.Name ~= "HumanoidRootPart" then 
@@ -6472,6 +6471,6 @@ Library:Notification("Loaded foren.lol in " .. Floor((tick() - loadingTime) * 10
 
 --[[
 
-V2 ☠
+ V2
 
 ]]
